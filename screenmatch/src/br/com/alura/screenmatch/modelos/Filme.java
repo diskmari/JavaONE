@@ -18,4 +18,10 @@ public class Filme extends Titulo implements Classificavel {
     public int getClassificacao() {
         return (int) pegaMedia()/2;
     }
+
+    @Override
+    // é necessario o toString para representar o polimorfismo
+    public String toString() {
+        return "Filme: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
+    }
 }

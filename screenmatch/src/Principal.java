@@ -67,6 +67,7 @@ public class Principal {
         System.out.println("Tamanho da lista: " + listasDeFilmes.size());
         System.out.println("Primeiro filme: " + listasDeFilmes.get(0).getNome());
         System.out.println(listasDeFilmes);
+        System.out.println("toString do filme " + listasDeFilmes.get(0).toString());
 
 
 
