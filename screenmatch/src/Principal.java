@@ -9,9 +9,7 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Lost");
-        meuFilme.setAnoDeLancamento(2010);
+        Filme meuFilme = new Filme("Lost", 2010);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duracao do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -24,17 +22,13 @@ public class Principal {
         System.out.println(meuFilme.pegaMedia());
         // meuFilme.somaDasAvaliacoes = 10;
 
-        Serie shadowhunters = new Serie();
-
-        shadowhunters.setNome("Shadowhunters");
-        shadowhunters.setAnoDeLancamento(2010);
+        Serie shadowhunters = new Serie(2010, "Shadowhunters");
         shadowhunters.setTemporadas(4);
         shadowhunters.setEpisodiosPorTemp(12);
         shadowhunters.setMinutosPorEp(50);
         System.out.println("Duracao para maratonar Shadowhunters: " + shadowhunters.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Avatar");
+        Filme outroFilme = new Filme("Avatar", );
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
@@ -54,10 +48,9 @@ public class Principal {
         episodios.setTotalVisualizacoes(300);
         filtro.filtra(episodios);
 
-        var filmeDoPaulo = new Filme();
+        var filmeDoPaulo = new Filme("Dogville", 2003);
         filmeDoPaulo.setDuracaoEmMinutos(200);
-        filmeDoPaulo.setNome("Dogville");
-        filmeDoPaulo.setAnoDeLancamento(2003);
+        //filmeDoPaulo.setNome("Dogville");
         filmeDoPaulo.avalia(10);
 
         ArrayList<Filme> listasDeFilmes = new ArrayList<>();
@@ -68,7 +61,6 @@ public class Principal {
         System.out.println("Primeiro filme: " + listasDeFilmes.get(0).getNome());
         System.out.println(listasDeFilmes);
         System.out.println("toString do filme " + listasDeFilmes.get(0).toString());
-
 
 
     }
