@@ -1,3 +1,5 @@
+package br.com.alura.screenmatch.principal;
+
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodios;
@@ -28,7 +30,7 @@ public class Principal {
         shadowhunters.setMinutosPorEp(50);
         System.out.println("Duracao para maratonar Shadowhunters: " + shadowhunters.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Avatar", );
+        Filme outroFilme = new Filme("Avatar", 2004);
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
